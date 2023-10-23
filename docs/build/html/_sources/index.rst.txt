@@ -8,7 +8,6 @@ OptDocs
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
    
    广义期权的一般创建方式 <exotic_explained>
 
