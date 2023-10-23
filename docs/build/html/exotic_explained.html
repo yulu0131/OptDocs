@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
 
-<html lang="zh_CN">
+<html lang="">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>常见奇异期权释义及其（近似）解析解实现 &#8212; OptDocs 0.0.1a 文档</title>
+    <title>常见奇异期权释义及其（近似）解析解实现 &#8212; OptDocs 0.0.1a documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -31,13 +31,12 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script src="_static/translations.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="index" title="索引" href="genindex.html" />
-    <link rel="search" title="搜索" href="search.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="OptDocs" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="zh_CN">
+    <meta name="docsearch:language" content="">
     
 
     <!-- Google Analytics -->
@@ -74,7 +73,7 @@
       
       
       
-      <h1 class="site-logo" id="site-title">OptDocs 0.0.1a 文档</h1>
+      <h1 class="site-logo" id="site-title">OptDocs 0.0.1a documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -345,9 +344,9 @@ title="Print to PDF"
               <div>
                 
   <section id="id1">
-<h1>常见奇异期权释义及其（近似）解析解实现<a class="headerlink" href="#id1" title="永久链接至标题">#</a></h1>
+<h1>常见奇异期权释义及其（近似）解析解实现<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <section id="binary-option">
-<span id="id2"></span><h2>二元期权<a class="headerlink" href="#binary-option" title="永久链接至标题">#</a></h2>
+<span id="id2"></span><h2>二元期权<a class="headerlink" href="#binary-option" title="Permalink to this headline">#</a></h2>
 <p>二元期权又可分为 <strong>gap option</strong> , <strong>cash or nothing option</strong> 以及 <strong>asset or nothing option</strong> 。</p>
 <p>跳跃二元期权的收益图</p>
 <img alt="_images/gap_option_payoff.png" src="_images/gap_option_payoff.png" />
@@ -357,16 +356,16 @@ title="Print to PDF"
 <img alt="_images/asset_or_nothing_payoff.png" src="_images/asset_or_nothing_payoff.png" />
 </section>
 <section id="american">
-<span id="id3"></span><h2>美式期权<a class="headerlink" href="#american" title="永久链接至标题">#</a></h2>
+<span id="id3"></span><h2>美式期权<a class="headerlink" href="#american" title="Permalink to this headline">#</a></h2>
 <p>美式期权指的期权持有者可以在期权存续期间的任何时间点行权的期权。期权公式大全(page 97~109)中共列出了三种美式期权的近似解析解公式: Barone-Adesi and Whaley(1987) (BAW),
 Bjerksund and Stensland (1993) (BS1993) 与 Bjerksund and Stensland (2002) （BS2002）。从运算效率上讲， BS1993 是推荐的方法。</p>
 <div class="admonition note">
-<p class="admonition-title">备注</p>
+<p class="admonition-title">Note</p>
 <p>期权公式大全一书中美式期权的实现是采用VBA，给出的测试案例的结果精度并不是特别高。</p>
 </div>
 </section>
 <section id="asian">
-<span id="id4"></span><h2>亚式期权<a class="headerlink" href="#asian" title="永久链接至标题">#</a></h2>
+<span id="id4"></span><h2>亚式期权<a class="headerlink" href="#asian" title="Permalink to this headline">#</a></h2>
 <p>亚式期权根据平均方法的不同分为几何平均亚式期权与算数平均亚式期权，其中算数平均亚式期权更为常见；根据平均对象的不同，又可分为浮动行权价亚式期权与固定行权价亚式期权。</p>
 <table class="colwidths-given table">
 <colgroup>
@@ -420,7 +419,7 @@ Bjerksund and Stensland (1993) (BS1993) 与 Bjerksund and Stensland (2002) （BS
 </table>
 </section>
 <section id="lookback">
-<span id="id5"></span><h2>回望式期权<a class="headerlink" href="#lookback" title="永久链接至标题">#</a></h2>
+<span id="id5"></span><h2>回望式期权<a class="headerlink" href="#lookback" title="Permalink to this headline">#</a></h2>
 <table class="table">
 <colgroup>
 <col style="width: 33%" />
@@ -452,7 +451,7 @@ Bjerksund and Stensland (1993) (BS1993) 与 Bjerksund and Stensland (2002) （BS
 </table>
 </section>
 <section id="barrier-option">
-<span id="id6"></span><h2>标准障碍期权<a class="headerlink" href="#barrier-option" title="永久链接至标题">#</a></h2>
+<span id="id6"></span><h2>标准障碍期权<a class="headerlink" href="#barrier-option" title="Permalink to this headline">#</a></h2>
 <p>标准障碍期权，分为向上/向下-敲出/敲入-看涨/看跌共 <span class="math notranslate nohighlight">\(2^3=8\)</span> 种。</p>
 <table class="colwidths-given table">
 <colgroup>
@@ -523,7 +522,7 @@ Bjerksund and Stensland (1993) (BS1993) 与 Bjerksund and Stensland (2002) （BS
 </table>
 </section>
 <section id="binary-barrier">
-<span id="id7"></span><h2>二元障碍期权<a class="headerlink" href="#binary-barrier" title="永久链接至标题">#</a></h2>
+<span id="id7"></span><h2>二元障碍期权<a class="headerlink" href="#binary-barrier" title="Permalink to this headline">#</a></h2>
 <p>二元障碍期权（binary barrier options) 在期权公式大全一书(p170-177) <a class="footnote-reference brackets" href="#id12" id="id8">1</a> 上共列出了28种。我们将这28种有序的归为4大类型</p>
 <table class="colwidths-given table">
 <colgroup>
@@ -634,21 +633,21 @@ Bjerksund and Stensland (1993) (BS1993) 与 Bjerksund and Stensland (2002) （BS
 </table>
 </section>
 <section id="id9">
-<h2>双障碍期权<a class="headerlink" href="#id9" title="永久链接至标题">#</a></h2>
+<h2>双障碍期权<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h2>
 <p>双障碍期权主要指双向敲出障碍期权（double knock out option, 或者 up out down out option), 期权公式大全(page 156) 给出了双敲出看涨期权与双敲出看跌期权的解析解定价公式。</p>
 </section>
 <section id="id10">
-<h2>非连续观察障碍期权<a class="headerlink" href="#id10" title="永久链接至标题">#</a></h2>
+<h2>非连续观察障碍期权<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h2>
 <p>市场上绝大多数障碍期权并非连续观察，一般均采用以每日收盘价（结算价）与障碍价格比较的方式确定是否敲入或敲出。对于此类障碍期权，我们可以通过Broadie, Glasserman, and Kou(1995) 给出的近似方法，通过调整障碍价格的方式近似地计算期权价值(page 165)。</p>
 <div class="math notranslate nohighlight" id="equation-zeta-func">
-<span class="eqno">(1)<a class="headerlink" href="#equation-zeta-func" title="公式的永久链接">#</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(1)<a class="headerlink" href="#equation-zeta-func" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{align}
 H_D &amp;= H e^{\beta \sigma \Delta t}, (H&gt;S)\\
 H_D &amp;= H e^{-\beta \sigma \Delta t}, (H&lt;S)
 \end{align}\end{split}\]</div>
 <p>其中 <span class="math notranslate nohighlight">\(\beta = \zeta (\frac{1}{2})/\sqrt{2\pi} \approx 0.5826\)</span></p>
 </section>
 <section id="id11">
-<h2>参考资料<a class="headerlink" href="#id11" title="永久链接至标题">#</a></h2>
+<h2>参考资料<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h2>
 <dl class="footnote brackets">
 <dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id8">1</a></span></dt>
 <dd><p>Espen Gaarder Haug, The Complete Guide for Option Pricing Formulas, 2nd ed., McGraw-Hill.</p>
@@ -665,10 +664,10 @@ H_D &amp;= H e^{-\beta \sigma \Delta t}, (H&lt;S)
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">OptDocs</p>
         </div>
     </a>
